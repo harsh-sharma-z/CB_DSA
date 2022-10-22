@@ -14,21 +14,21 @@ public class Generate_Parentheses {
 
 	public List<String> generateParenthesis(int n) {
 		List<String> result = new ArrayList<>();
-		generatedParethesis(n, 0, 0, "", result);
+		generatedParenthesis(n, 0, 0, "", result);
 		return result;
 	}
 
-	private void generatedParethesis(int n, int openBrackets, int closedBrackets, String generatedString, List<String> result) {
+	private void generatedParenthesis(int n, int openBrackets, int closedBrackets, String generatedString, List<String> result) {
 		if (openBrackets == n && closedBrackets == n) {
 			result.add(generatedString);
 			return;
 		}
 
 		if (openBrackets < n)
-			generatedParethesis(n, openBrackets + 1, closedBrackets, generatedString + "(", result);
+			generatedParenthesis(n, openBrackets + 1, closedBrackets, generatedString + "(", result);
 
 		if (closedBrackets < openBrackets)
-			generatedParethesis(n, openBrackets, closedBrackets + 1, generatedString + ")", result);
+			generatedParenthesis(n, openBrackets, closedBrackets + 1, generatedString + ")", result);
 
 	}
 
