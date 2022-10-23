@@ -1,1 +1,6 @@
 remote-theme: just-the-docs/just-the-docs
+
+# remote link in the top right corner.
+aux_links:
+  "Aryan Upadhyay on GitHub":
+    - "//github.com/aryan-upa"
