@@ -4,3 +4,13 @@ remote-theme: just-the-docs/just-the-docs
 aux_links:
   "Aryan Upadhyay on GitHub":
     - "//github.com/aryan-upa"
+
+collections:
+  src:
+    permalink: "/:collection/:src/"
+    output: true
+
+just_the_docs:
+  collections:
+    src:
+      name: src
